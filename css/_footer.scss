@@ -1,0 +1,38 @@
+
+.footer {
+  color: $color-white;
+  padding: 2rem;
+
+  & a:hover {
+    color: $color-red;
+  }
+
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  & .footer__links,
+  & .footer__contacts {
+    text-align: center;
+    line-height: 1.6rem;
+  }
+
+  & .footer__links {
+    & img {
+      max-width: 24px;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  .footer {
+    & .container {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+}
