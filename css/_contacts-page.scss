@@ -10,11 +10,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4.3rem 0;
+    padding: 10rem 0 4.25rem;
   }
 
   & a,
   & .contacts__company {
     color: $color-red-btn;
+  }
+
+  & .map {
+    margin-bottom: 2rem;
   }
 }

@@ -26,7 +26,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -34,9 +34,6 @@
   background-color: $color-black;
   z-index: 1;
   text-transform: uppercase;
-
-  // //////////////////////////Todo позже убрать
-  // display: none;
 
   & .nav__list {
     & li {
@@ -47,6 +44,10 @@
   & .nav__item.active {
     color: $color-red;
   }
+}
+
+.nav.active {
+  display: flex;
 }
 
 .nav-menu {
@@ -176,6 +177,11 @@
   }
 }
 
+.header.active {
+  background-color: rgba(17, 17, 17, 0.9);
+  box-shadow: 1px 1px 5px $color-red;
+  transition: background-color 0.1s ease;
+}
 
 @media (min-width: 780px) {
   .header {
@@ -190,6 +196,7 @@
     position: static;
     font-weight: 500;
     background-color: transparent;
+    display: flex;
 
     & .nav__list {
       display: flex;
@@ -215,7 +222,7 @@
       left: 0;
       height: 0;
       top: 1.5rem;
-      background: rgba(17, 17, 17, 0.6);
+      background: rgba(17, 17, 17, 0.8);
       transition: all 0.1s ease;
       padding: 5px;
       overflow: hidden;

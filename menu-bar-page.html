@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Bloody Mary</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="main-page.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item nav-menu">
+              <span class="nav-menu__dropdown active">Меню</span>
+              <ul class="nav-menu__list active">
+                <li class="nav__item active"><a href="menu-bar-page.html" class="nav__link">Бар</a></li>
+                <li class="nav__item"><a href="menu-kitchen-page.html" class="nav__link">Кухня</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="atmosphere-page.html" class="nav__link">Атмосфера</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Клуб друзей</a></li>
+            <li class="nav__item"><a href="rules-page.html" class="nav__link">Правила</a></li>
+            <li class="nav__item"><a href="contacts-page.html" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Онлайн оплата</a></li>
+          </ul>
+        </nav>
+        <a href="" class="btn-book">Забронировать столик</a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main menu-bar-page noselect">
+      <section class="main__preview">
+        <div class="container">
+          <div class="page-title">
+            <h1 class="title">Меню</h1>
+            <h2 class="subtitle">Бар</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="kitchen-menu">
+        <div class="container">
+
+          <form class="catalog-filter">
+            <fieldset class="catalog-filter__block">
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="author-bloody-mary" name="menu-bar" checked>
+                <label for="author-bloody-mary">Авторские блади мэри</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="whiskey-cocktails" name="menu-bar">
+                <label for="whiskey-cocktails">Коктейли на виски</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="cocktails-on-gin" name="menu-bar">
+                <label for="cocktails-on-gin">Коктейли на джине</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="cocktails-on-rum" name="menu-bar">
+                <label for="cocktails-on-rum">Коктейли на роме</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="cocktails-on-tequila" name="menu-bar">
+                <label for="cocktails-on-tequila">Коктейли на текиле</label>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__block">
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="cocktails-on-vodka" name="menu-bar">
+                <label for="cocktails-on-vodka">Коктейли на водке</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="italian-classics" name="menu-bar">
+                <label for="italian-classics">Итальянская классика</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="cocktails-on-brandy" name="menu-bar">
+                <label for="cocktails-on-brandy">Коктейли на бренди</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="wines" name="menu-bar">
+                <label for="wines">Вина</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="authors-cocktails" name="menu-bar">
+                <label for="authors-cocktails">Авторские коктейли</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="catalog-filter__block">
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="shots" name="menu-bar">
+                <label for="shots">Шоты</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="non-alcoholic" name="menu-bar">
+                <label for="non-alcoholic">Безалкогольные</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="beer-and-cider" name="menu-bar">
+                <label for="beer-and-cider">Пиво и сидр</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="strong-alcohol" name="menu-bar">
+                <label for="strong-alcohol">Крепкий алкоголь</label>
+              </div>
+              <div class="form-checkbox catalog-filter__block-item">
+                <input class="visually-hidden" type="radio" id="tinctures" name="menu-bar">
+                <label for="tinctures">Настойки</label>
+              </div>
+            </fieldset>
+          </form>
+          
+          <div class="bar-cards">
+            <div class="bar__col">
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                  Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                  Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                </p>
+              </div>
+  
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+            </div>
+            <div class="bar__col">
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                  Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                  Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                </p>
+              </div>
+  
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+            </div>
+            <div class="bar__col">
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                  Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей
+                </p>
+              </div>
+  
+              <div class="bar-cards__item">
+                <div class="bar-cards__item-header">
+                  <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                  <div class="bar-cards__item-price">
+                    <img src="images/bar-card-picktogram.svg" alt="picktogram">
+                    <span class="bar-cards__item-size">400мл</span>
+                    <span class="bar-cards__item-amount"><b>450Р</b></span>
+                  </div>
+                </div>
+                <p>Культовая американская классика, 
+                  с французской историей и русскими 
+                  корнями. Водка, фирменный томатный 
+                  Bloody Микс, творческий соус, специи и 
+                  сельдирей</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="definition">
+        <div class="container">
+          <div class="definition__col">
+            <div class="definition__top">
+              <img src="images/bar-card-picktogram.svg" alt="picktogram">
+            </div>
+            <div class="definition__bottom">
+              <p>Коктейли, отмеченные таким знаком
+                 могут быть поданы в 1, 1.5, 2-х и даже 3-х
+                литровых банках с соответствующими украшениями и гарнирами.
+                Если вы фанат Bloody Mary и хотите сделать классное селфи - это для вас!
+                Стоимость уточняйте при заказе.</p>
+            </div>
+          </div>
+          <div class="definition__col">
+            <div class="definition__top">
+              Вы так же можете создать свою 
+              уникальную Bloody Mary сами: для себя, друга или симпатичной
+              девушки или парня за соседним
+              столиком. Просто скажите официанту
+              или бармену.
+            </div>
+            <div class="definition__bottom">
+              <div class="bar-cards__item-header">
+                <h2 class="bar-cards__item-title">Блади Мэри</h2>
+                <div class="bar-cards__item-price">
+                  <span class="bar-cards__item-size">400мл</span>
+                  <span class="bar-cards__item-amount"><b>450Р</b></span>
+                </div>
+              </div>
+              <p>Сделайте себе идеальную Bloody Mary дома или подари другу:
+                итальянские томаты, сельдерей,
+                творческий соус, соль, перец чили, набор секретных специй.
+                Инструкция на этикетке.</p>
+            </div>
+          </div>
+          <div class="definition__col">
+            <div class="definition__top">
+              <img src="images/nacho.svg" alt="picktogram">
+            </div>
+            <div class="definition__bottom">
+              <p>Коктейли, отмеченные таким знаком могут быть поданы в 1, 1.5, 2-х и даже 3-х литровых банках с соответствующими украшениями и гарнирами.
+                Если вы фанат Bloody Mary и хотите сделать классное селфи - это для вас!
+                Стоимость уточняйте при заказе.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__links">
+          <li>г.Санкт-Петербург</li>
+          <li>Мучной переулок, 9/27</li>
+          <li>
+            <a href="" class="footer__links-item">
+              <img src="images/instagram.svg" alt="instagram">
+            </a>
+            <a href="" class="footer__links-item">
+              <img src="images/facebook.svg" alt="facebook">
+            </a>
+            <a href="" class="footer__links-item">
+              <img src="images/tabler_brand-vk.svg" alt="vk">
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__logo">
+          <a href="main-page.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="footer__contacts">
+          <p>[ПТ,СБ]14:00 до 04:00</p>
+          <p>[ВС-ЧТ]14:00 до 02:00</p>
+          <p><a href="tel:+7 812 915 25 65">+7 812 915 25 65</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

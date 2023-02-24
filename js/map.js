@@ -8,9 +8,3 @@ const popup = L.popup({closeOnClick: true,autoClose: true}).setLatLng([59.929630
 L.tileLayer(OPEN_SOURCE_MAP, { attribution: MAP_ATTRIBUTE }).addTo(map);
 
 popup.addTo(map);
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
-  centeredSlides: true,
-  spaceBetween: 50,
-  loop: true,
-});

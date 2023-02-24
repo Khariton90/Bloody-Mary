@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Bloody Mary</title>
 </head>
@@ -28,10 +28,10 @@
                 <li class="nav__item"><a href="menu-kitchen-page.html" class="nav__link">Кухня</a></li>
               </ul>
             </li>
-            <li class="nav__item"><a href="atmosphere-page.html" class="nav__link">Атмосфера</a></li>
+            <li class="nav__item active"><a href="atmosphere-page.html" class="nav__link">Атмосфера</a></li>
             <li class="nav__item"><a href="" class="nav__link">Клуб друзей</a></li>
             <li class="nav__item"><a href="rules-page.html" class="nav__link">Правила</a></li>
-            <li class="nav__item active"><a href="contacts-page.html" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="contacts-page.html" class="nav__link">Контакты</a></li>
             <li class="nav__item"><a href="" class="nav__link">Онлайн оплата</a></li>
           </ul>
         </nav>
@@ -42,21 +42,66 @@
       </div>
     </header>
 
-    <main class="main contacts-page">
-      <section class="contacts">
-        <div class="container">
-          <p class="contacts__company">ООО "РЭДМАН И КО" ОГРН 1167847201070 ИНН:7840050585</p>
-          <h2 class="contacts-title">Контакты</h2>
-          <p>Для счетов и актов: <a href="mailto:oplata@bloodymarybar.ru">oplata@bloodymarybar.ru</a></p>
-          <p>По вопросам сотрудничества с <b>Brisket Eat & Fun</b> <a href="mailto:info@brisket.spb.ru">info@brisket.spb.ru</a></p>
-          <p>По вопросам сотрудничества с <b>Bloody Mary Bar</b> <a href="mailto:info@bloodymarybar.ru">info@bloodymarybar.ru</a></p>
-          <p>Тел. офиса: <a href="tel:+7 (812) 9072770"><b>+7 (812) 9072770</b></a></p>
-          <p>Адрес офиса и адрес для пересылки: <b>Шведский пер. д. 2 б Санкт-Петербург, 191186, Россия</b></p>
-        </div>
-      </section>
+    <main class="main atmosphere-page noselect">
+      <section class="atmosphere">
+        <div class="swiper mySwiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/gallery-meet.png" alt="meet">
+              </div>
 
-      <section class="main-map map">
-        <div class="map-wrapper" id="map-canvas"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/2.png" alt="2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/3.png" alt="3">
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/4.png" alt="4">
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/5.png" alt="5">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/6.png" alt="6">
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/7.png" alt="7">
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="atmosphere-slide-wrapper">
+                <img src="images/8.png" alt="8">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -87,9 +132,8 @@
     </footer>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet-src.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/main.js"></script>
 </body>
 

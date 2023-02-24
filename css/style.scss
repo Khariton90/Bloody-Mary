@@ -6,6 +6,8 @@
 @import "rules-page.scss";
 @import "contacts-page.scss";
 @import "kitchen-menu-page.scss";
+@import "bar-menu-page.scss";
+@import "atmosphere-page.scss";
 
 * {
   box-sizing: border-box;
@@ -40,6 +42,11 @@ img {
 
 fieldset {
   border: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  width: 0;
 }
 
 .container {
@@ -123,11 +130,40 @@ fieldset {
 
   & .title {
     display: inline-block;
-    border-bottom: 2px solid $color-white;
+    border-bottom: 4px solid $color-white;
   }
 
   & .subtitle {
     transform: rotate(180deg);
+  }
+}
+
+.catalog-filter {
+  color: $color-white;
+  font-weight: 700;
+  font-size: .7rem;
+  line-height: 1.8rem;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+
+  & .catalog-filter__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 9px 0;
+    align-items: center;
+    min-height: 30px;
+  }
+
+  & .catalog-filter__block-item {
+    & label {
+      cursor: pointer;
+    }
+  }
+
+  & input[type="radio"]:checked+label{ 
+    color: $color-red; 
+    font-size: 1rem;
   }
 }
 
@@ -154,6 +190,20 @@ fieldset {
   .map-wrapper {
     width: 100%;
     height: 420px;
+  }
+
+  .catalog-filter {
+    margin: 0 5rem;
+    font-size: 1rem;
+
+    & .catalog-filter__block {
+      gap: 24px;
+      min-height: 47px;
+    }
+
+    & input[type="radio"]:checked+label{ 
+      font-size: 1.5rem;
+    }
   }
 }
 

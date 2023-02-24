@@ -1,0 +1,79 @@
+.atmosphere-page {
+  margin-top: 12rem;
+}
+
+.atmosphere {
+  padding: 0 1rem;
+
+  & .atmosphere-slide-wrapper {
+    border-radius: 20px;
+    max-height: 350px;
+    overflow: hidden;
+  }
+
+  & img {
+    object-position: 50% 50%;
+    object-fit: cover;
+    scale: 1.1;
+    min-height: 350px;
+  }
+  & .swiper-gallery {
+    display: block;
+    margin: 2rem 0;
+      & .swiper-slide {
+        &:nth-child(even) {
+          width: 100%;
+        }
+    
+        &:nth-child(odd) {
+          width: 100%;
+        }
+      }
+  }
+}
+
+@media (min-width: 780px) {
+  .atmosphere {
+    & .swiper-gallery {
+      display: block;
+      max-height: 450px;
+      margin: 2rem 0;
+
+      &:nth-child(1) {
+        & .swiper-slide {
+          &:nth-child(even) {
+            width: 30%;
+          }
+      
+          &:nth-child(odd) {
+            width: 70%;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        & .swiper-slide {
+          &:nth-child(even) {
+            width: 30%;
+          }
+      
+          &:nth-child(odd) {
+            width: 70%;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        & .swiper-slide {
+          &:nth-child(even) {
+            width: 60%;
+          }
+      
+          &:nth-child(odd) {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}
