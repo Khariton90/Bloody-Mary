@@ -19,7 +19,10 @@ const popup = L.popup(customOptions)
         Бар "Bloody Mary <br>
         Bar&Grill"
       </h3>
-        <p>4,7  <span>★★★★★</span></p>
+        <p>4,8 <span>★★★★</span><span class="last-star">★</span>
+        <a class="reviews-link" style="color: #ccc" target="_blank" 
+          href="https://yandex.ru/maps/org/bloody_mary_bar_grill/1758744406/reviews/?ll=30.323411%2C59.929614&tab=reviews&z=16.14">(642)</a>
+        </p>
         <br>
         <p>Бар ₽₽</p>
     </div>

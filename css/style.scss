@@ -207,6 +207,12 @@ fieldset {
   & span {
     color: gold;
   }
+
+  & .last-star {
+    background-image: linear-gradient(to left,#ccc 48%,gold 48%);
+    color: transparent;
+    background-clip: text;
+  }
 }
 
 .logo-popup {

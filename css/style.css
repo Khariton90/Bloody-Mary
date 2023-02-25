@@ -1194,6 +1194,12 @@ fieldset {
 .custom-popup span {
   color: gold;
 }
+.custom-popup .last-star {
+  background-image: linear-gradient(to left, #ccc 48%, gold 48%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
 
 .logo-popup {
   background-color: black;
