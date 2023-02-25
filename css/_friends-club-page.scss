@@ -1,0 +1,69 @@
+.friends-club-page {
+  color: $color-white;
+  margin-top: 8rem;
+}
+
+.friends-club-block {
+  & .pay-title {
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    padding: 2rem 0;
+  }
+}
+
+.friends-club-tabs {
+  min-height: 100%;
+  & p {
+    padding: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 780px) {
+  .friends-club-page {
+    margin-top: 10rem;
+    background: url('../images/friends-club-bg.png') left no-repeat;
+    background-size: contain;
+    & .container {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 2rem 1rem; 
+    }
+  }
+
+  .friends-club-block {
+    & .pay-title {
+      font-size: 2rem;
+      padding: 3rem 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .friends-club-page {
+    & .container {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: 4.5rem;
+    }
+  }
+
+  .friends-club-tabs {
+    min-height: 100%;
+    & p {
+      padding: 1rem 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .friends-club-page {
+    & .container {
+      max-width: 1200px;
+      background: none;
+    }
+
+    padding-bottom: 2.5rem;
+  }
+}

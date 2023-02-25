@@ -1,0 +1,152 @@
+.online-pay-page {
+  color: $color-white;
+  margin-top: 8rem;
+}
+
+.pay-form-block {
+  & .pay-title {
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    padding: 2rem 0;
+  }
+}
+
+.pay-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  padding: 1rem 1.5rem;
+  background-color: $color-white;
+  border-radius: 5px;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 3rem;
+
+  & label {
+    flex: 1;
+    width: 100%;
+    position: relative;
+
+    &:nth-child(1)::before {
+      content: '№';   
+    }
+
+    &:nth-child(2)::before {
+      content: '₽';   
+    }
+
+    &::before {
+      position: absolute;
+      left: 1rem;
+      top: 4px;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  & input {
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+  }
+
+  & input[type="number"] {
+    width: 100%;
+    color: $color-white;
+    background-color: $color-black;
+    text-align: end;
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  & input[type="submit"] {
+    color: $color-white;
+    background-color: $color-red-btn;
+    text-align: center;
+    padding: 10px 32px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.pay-form-description {
+  padding-bottom: 2rem;
+}
+
+.pay-form__cards {
+  display: flex;
+  height: 100%;
+  column-gap: .8rem;
+  max-height: 160px;
+
+  & .pay-form__card {
+    border: 1px solid $color-white;
+    border-radius: 5px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
+.pay-annotation {
+  padding: 2rem 0;
+  & p {
+    padding-bottom: 2rem;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 780px) {
+  .online-pay-page {
+    margin-top: 10rem;
+    background: url('../images/payment-bg.png') left no-repeat;
+    background-size: contain;
+    & .container {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .pay-form-block {
+    & .pay-title {
+      font-size: 2rem;
+      padding: 3rem 0;
+    }
+  }
+
+  .pay-form__cards {
+    display: flex;
+    height: 100%;
+    column-gap: 2.8rem;
+    max-height: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .online-pay-page {
+    & .container {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: 4.5rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .online-pay-page {
+    & .container {
+      max-width: 1200px;
+      background: none;
+    }
+
+    padding-bottom: 2.5rem;
+  }
+}

@@ -1,5 +1,5 @@
 .atmosphere-page {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 
 .atmosphere {
@@ -33,6 +33,10 @@
 }
 
 @media (min-width: 780px) {
+  .atmosphere-page {
+    margin-top: 12rem;
+  }
+
   .atmosphere {
     & .swiper-gallery {
       display: block;
@@ -53,11 +57,11 @@
 
       &:nth-child(2) {
         & .swiper-slide {
-          &:nth-child(even) {
+          &:nth-child(odd) {
             width: 30%;
           }
       
-          &:nth-child(odd) {
+          &:nth-child(even) {
             width: 70%;
           }
         }

@@ -3,10 +3,14 @@ const navMenu = document.querySelector(".nav-menu__list");
 const headerNav = document.querySelector(".nav");
 const headerBurger = document.querySelector(".header__burger");
 const header = document.querySelector(".header");
+const progressList = document.querySelector(".progress-list");
+const progressItems = document.querySelectorAll(".progress-item");
+
+const SCROLL_DISTANCE = 120;
 
 const changeHeaderBg = () => {
   let scrollDistance = window.scrollY;
-  scrollDistance > 100 ? header.classList.add("active") : header.classList.remove("active");
+  scrollDistance > SCROLL_DISTANCE ? header.classList.add("active") : header.classList.remove("active");
 }
 document.addEventListener("scroll", changeHeaderBg);
 
